@@ -8,6 +8,14 @@
 #define debug(x) cout<<x<<endl;
 using namespace std;
 
+//another interesting template yoy can use, is 
+#define int long long
+// can easily help change a large amount of code if overflow is the issue. However, for main, int must be renamed to
+// int32_t main() {...}
+// another way to add long longs is by saying 
+using ll = long long
+// this is superior to typedef and #define, because it does not fail in some contexts, such as typecasting.
+
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
