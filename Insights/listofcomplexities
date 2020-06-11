@@ -1,0 +1,13 @@
+This will be a list of time complexities for me to look at until I actually learn the underlying mechanisms behind certain operations/data structures,
+after which this list will be rendered pretty useless.
+Maybe these resources would be useful to someone else later...
+Although I originally intended for this to be a list, I might write down a few comments on some of these
+
+1) C++ STL map:
+	a) insertion: O(log n) 
+	b) deletion: O(log n)
+	c) search: O(log n) 
+
+Both maps and sets can be implemented as binary search trees
+
+
