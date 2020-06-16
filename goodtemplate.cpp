@@ -13,10 +13,11 @@ using namespace std;
 // can easily help change a large amount of code if overflow is the issue. However, for main, int must be renamed to
 // int32_t main() {...}
 // another way to add long longs is by saying 
-using ll = long long
+
+using ll = long long;
 // this is superior to typedef and #define, because it does not fail in some contexts, such as typecasting.
 
-int main() {
+int32_t main() {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
