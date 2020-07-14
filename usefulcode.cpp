@@ -4,11 +4,15 @@
 #include<vector>
 #include<set>
 #include<algorithm>
-
 using namespace std;
 
 //Useful debugging technique
 #define debug(x) cout << (#x) << " is " << x << endl; 
+
+
+//Useful way to speed up computation for modulo operations
+constexpr int MOD = 1000000007; // and other such popular modulo constants... constexpr allows the compiler to use its popular compiler optimisations
+
 
 int main () {
 	//using a map 
@@ -42,7 +46,7 @@ int main () {
 		INT_MAX;
 	//could be subject to integer overflows, however
 
-	
+
 	/* printf and scanf tricks */
 		//1) Read but do not store
 		scanf("%d %*s %d",&a, &b);
@@ -52,20 +56,22 @@ int main () {
 		scanf("%[0-9]s",str);
 		scanf("%[^\n]s",str);
 		//3) To read char 
-	//
+
 
 	#include <cstdio>
 	using namespace std;
 
-	int N;         // using global variables in contests can be a good strategy
-	char x[110];  // make it a habit to set array size a bit larger than needed
+	int N;        		 // using global variables in contests can be a good strategy
+	char x[110];   		 // make it a habit to set array size a bit larger than needed
 
 	int main() {
-	  scanf("%d\n", &N);
-	  while (N--) {                  // we simply loop from N, N-1, N-2, ..., 0
-	    scanf("0.%[0-9]...\n", &x);   // `&' is optional when x is a char array
-	                         // note: if you are surprised with the trick above,
-	                      // please check scanf details in www.cppreference.com
-	    printf("the digits are 0.%s\n", x);
-	} } // return 0;
+	    scanf("%d\n", &N);
+	    while (N--) {                     			// we simply loop from N, N-1, N-2, ..., 0
+	    	scanf("0.%[0-9]...\n", &x);   			// `&' is optional when x is a char array
+   	                         			  			// note: if you are surprised with the trick above,
+	                         			  			// please check scanf details in www.cppreference.com
+	    	printf("the digits are 0.%s\n", x);
+	  } 
+	  // return 0;
+	}
 }
