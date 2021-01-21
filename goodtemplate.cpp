@@ -4,15 +4,14 @@
 //a future competitive coding template
 
 #include<bits/stdc++.h>
-
-#define debug(x) cout<<x<<endl;
 using namespace std;
+#define debug(x) cout << #x << " = " << x << endl;
 
-//another interesting template yoy can use, is 
+//another interesting template yoy can use, is
 #define int long long
 // can easily help change a large amount of code if overflow is the issue. However, for main, int must be renamed to
-// int32_t main() {...}
-// another way to add long longs is by saying 
+// int32_t main () {...}
+// another way to add long longs is by saying
 
 using ll = long long;
 // this is superior to typedef and #define, because it does not fail in some contexts, such as typecasting.
@@ -28,17 +27,17 @@ int32_t main() {
 
 	//128 bit integer
 	__int128_t x;
-	x=2;
+	x = 2;
 
 	//comparing floating point numbers
 	double a,b;
-	a=0.3;
-	b=1.0;
-	double c=a*a+0.1;
-	if (abs(b-c)<1e-9) {
+	a = 0.3;
+	b = 1.0;
+	double c = a * a + 0.1;
+	if (abs(b - c) < 1e-9) {
 		//c and b are equal
 	}
 
 	string s;
-	getline(cin,s);
+	getline(cin, s);
 }

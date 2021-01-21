@@ -6,7 +6,7 @@
 // This is probably subject to change to suit my needs in the future
 
 class dsu {
-  public: 
+  public:
     vector <int> p;
     vector <int> size;
     int n;
@@ -24,7 +24,7 @@ class dsu {
         x = parent(x);
         y = parent(y);
         if (x != y) {
-            if (size[x] > size[y]) 
+            if (size[x] > size[y])
                 swap(x, y);
             p[x] = y;
             size[x] += size[y];

@@ -1,13 +1,8 @@
-#include<cstdio>
-#include<iostream>
-#include<map>
-#include<vector>
-#include<set>
-#include<algorithm>
+#include<bits/stdc++.h>
 using namespace std;
 
 //Useful debugging technique
-#define debug(x) cout << (#x) << " is " << x << endl; 
+#define debug(x) cout << (#x) << " is " << x << endl;
 
 
 //Useful way to speed up computation for modulo operations
@@ -15,10 +10,11 @@ constexpr int MOD = 1000000007; // and other such popular modulo constants... co
 
 
 int main () {
-	//using a map 
+	//using a map
 		map <string, vector <string> > m;
 	//suppose you have string s, and another string s2 based on what string you have, you can check the following
-		map[s].push_back(s2);
+        string s, s2; char *st;
+		m[s].push_back(s2);
 
 	// EXAMPLE CODE
 		class Solution {
@@ -37,7 +33,7 @@ int main () {
 		        return ans;
 		    }
 		};
-	//This was a LeetCode submission, where the idea for the code was taken from Errichto but I made the 
+	//This was a LeetCode submission, where the idea for the code was taken from Errichto but I made the
 	//submission anyway, as practce
 
 
@@ -47,31 +43,31 @@ int main () {
 	//could be subject to integer overflows, however
 
 
+        int a, b;
 	/* printf and scanf tricks */
 		//1) Read but do not store
 		scanf("%d %*s %d",&a, &b);
 		//2) Read binary string
-		scanf("%[01]s",str);
+		scanf("%[01]s", st);
 		// Similarly...
-		scanf("%[0-9]s",str);
-		scanf("%[^\n]s",str);
-		//3) To read char 
+		scanf("%[0-9]s", st);
+		scanf("%[^\n]s", st);
+		//3) To read char
 
 
-	#include <cstdio>
-	using namespace std;
+        #include <cstdio>
+        using namespace std;
 
-	int N;        		 // using global variables in contests can be a good strategy
-	char x[110];   		 // make it a habit to set array size a bit larger than needed
+        int N;        		 // using global variables in contests can be a good strategy
+        char *x;   		 // make it a habit to set array size a bit larger than needed
 
-	int main() {
-	    scanf("%d\n", &N);
-	    while (N--) {                     			// we simply loop from N, N-1, N-2, ..., 0
-	    	scanf("0.%[0-9]...\n", &x);   			// `&' is optional when x is a char array
-   	                         			  			// note: if you are surprised with the trick above,
-	                         			  			// please check scanf details in www.cppreference.com
-	    	printf("the digits are 0.%s\n", x);
-	  } 
-	  // return 0;
+        // int main() { I've removed the declaration of main here to fit the code, but the variables being global is in general a "good" strategy, apparently
+            scanf("%d\n", &N);
+            while (N--) {                     			// we simply loop from N, N-1, N-2, ..., 0
+                scanf("0.%[0-9]...\n", x);   			// `&' is optional when x is a char array
+                                                        // please check scanf details in www.cppreference.com
+                printf("the digits are 0.%s\n", x);
+          // }
+      // return 0;
 	}
 }
