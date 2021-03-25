@@ -17,5 +17,5 @@ int main () {
 
 	int x;
 	cin>>x;
-	cout<<x+20;	
+	cout<<x+20;
 }
