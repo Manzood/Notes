@@ -16,7 +16,7 @@ vector<string> vec_splitter(string s) {
 	}
 	return res;
 }
-void debug_out(vector<string> __attribute__ ((unused)) args, __attribute__ ((unused)) int idx, __attribute__ ((unused)) int LINE_NUM) { cerr << endl; } 
+void debug_out(vector<string> __attribute__ ((unused)) args, __attribute__ ((unused)) int idx, __attribute__ ((unused)) int LINE_NUM) { cerr << endl; }
 template <typename Head, typename... Tail>
 void debug_out(vector<string> args, int idx, int LINE_NUM, Head H, Tail... T) {
 	if(idx > 0) cerr << ", "; else cerr << "Line(" << LINE_NUM << ") ";
@@ -36,12 +36,12 @@ int main() {
 	double z = 0.2;
 	string s = "beginner1010";
 	long long b = 1LL << 60;
-	
+
 	debug(x, y, z, s, b);
-	
+
 	double aux = 1010.0;
 	string code = "code";
-	
+
 	debug(code + "forces", -aux / 10 * 2.3);
 	return 0;
 }
